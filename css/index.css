@@ -262,8 +262,9 @@ p {
   justify-content: center;
   gap: 1rem;
   max-width: var(--max-width-container);
-  margin: auto;
+ 
   padding: var(--padding-container);
+  margin: auto;
 }
 
 .modulos__paragraph {
@@ -408,6 +409,7 @@ p {
     
     
   }
+
 
   .grid-container {
     display: grid;
