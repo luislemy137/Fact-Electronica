@@ -10,7 +10,8 @@
   <!-- animacion css  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- link icon google font  -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body class="body">
@@ -62,20 +63,20 @@
   <main class="main">
     <section class="hero">
       <div class="hero-container">
-        <article class="hero__article animate__animated animate__fadeInLeft animate__delay-1s">
+        <article class="hero__article --animate__animated animate__fadeInLeft animate__delay-1s">
           <h2 class="hero__subtitle">Facturación Electrónica Inmediata</h2>
 
           <h3 id="changing-text"></h3>
 
-          <p class="hero__texto">Nuestra solución de facturación electrónica simplifica tus tareas contables,
+          <p class="texto-desktop">Nuestra solución de facturación electrónica simplifica tus tareas contables,
             cumple con los requisitos de SUNAT y te ayuda a tener éxito en tu negocio. Únete a nosotros.</p>
           <p class="texto-celular">Eficiencia empresarial, gestión simplificada, informes
             detallados.</p>
-          <!--<p>Optimizamos tu proceso de facturación con nuestra plataforma electrónica diseñada exclusivamente para emprendedores y pymes. Genera facturas de forma rápida, segura y cumple con todas las regulaciones fiscales vigentes. Olvídate del papeleo y envía las facturas directamente por correo electrónico a tus clientes. Nuestra interfaz intuitiva te permite mantener un control total sobre tus ventas, generar informes detallados y simplificar tus tareas administrativas. Potencia tu negocio y maximiza tu eficiencia con nuestra solución de facturación electrónica adaptada a emprendedores y pymes.</p>  -->
+          <!--<p>Optimizamos tu proceso de facturación con nuestra plataforma electrónica diseñada
 
-        </article>
-        <div class="hero__imagen animate__animated animate__fadeInRight animate__delay-1s">
-          <img src="./img/emprendedor.png" alt="emprendedor" width="400px">
+       exclusivamente para emprendedores y pymes. Genera facturas de forma rápida, segura y cumple con todas las regulaciones fiscales vigentes. Olvídate del papeleo y envía las facturas directamente por correo electrónico a tus clientes. Nuestra interfaz intuitiva te permite mantener un control total sobre tus ventas, generar informes detallados y simplificar tus tareas administrativas. Potencia tu negocio y maximiza tu eficiencia con nuestra solución de facturación electrónica adaptada a emprendedores y pymes.</p>  -->  </article>
+        <div class="hero__imagen <--animate__animated animate__fadeInRight animate__delay-1s-->">
+          <img src="./img/app responsive.png" alt="aplicativo responsive" width="340px">
         </div>
       </div>
     </section>
@@ -93,8 +94,7 @@
           <!--< ventas -->
           <div class="modulos__topic">
             <div class="modulos__topic-icon-container">
-              <img src="./img/modulos/shopping-cart.png" alt="icono-img-modulo"
-                class="modulos__topic-icon" />
+              <img src="./img/modulos/shopping-cart.png" alt="icono-img-modulo" class="modulos__topic-icon" />
               <h3 class="modulos__topic-title">Venta</h3>
               <div class="modulos__topic-button">
                 <ion-icon name="chevron-down-outline" class="modulos__topic-button-icon"></ion-icon>
@@ -123,12 +123,47 @@
             </ul>
 
           </div>
+          <!--< logística -->
+          <div class="modulos__topic">
+            <div class="modulos__topic-icon-container">
+              <img src="./img/modulos/warehouse.png" alt="icono-img-modulo" class="modulos__topic-icon" />
+              <h3 class="modulos__topic-title">Logística</h3>
+              <div class="modulos__topic-button">
+                <ion-icon name="chevron-down-outline" class="modulos__topic-button-icon"></ion-icon>
+              </div>
+            </div>
+            <ul class="modulos__topic-paragraph">
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Generación de comprobante</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Emisión de nota de crédito y débito</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Emisión de Guía de Remisión</span>
+              </li>
+
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Comprobantes de Contingencia</span>
+              </li>
+
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Dashboard</span>
+              </li>
+            </ul>
+
+          </div>
           <!--< punto de venta -->
           <div class="modulos__topic">
             <div class="modulos__topic-icon-container">
               <img src="./img/modulos/computermonitoroutline_79935.png" alt="icono-img-modulo"
                 class="modulos__topic-icon" />
-              <h3 class="modulos__topic-title">Pto de Venta (POS)</h3>
+              <h3 class="modulos__topic-title">Pto de Venta</h3>
               <div class="modulos__topic-button">
                 <ion-icon name="chevron-down-outline" class="modulos__topic-button-icon"></ion-icon>
               </div>
@@ -190,48 +225,14 @@
             </ul>
 
           </div>
-          <!--< logística -->
-          <div class="modulos__topic">
-            <div class="modulos__topic-icon-container">
-              <img src="./img/modulos/warehouse.png" alt="icono-img-modulo" class="modulos__topic-icon" />
-              <h3 class="modulos__topic-title">logística</h3>
-              <div class="modulos__topic-button">
-                <ion-icon name="chevron-down-outline" class="modulos__topic-button-icon"></ion-icon>
-              </div>
-            </div>
-            <ul class="modulos__topic-paragraph">
-              <li>
-                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
-                <span class="modulos__topic-info">Generación de comprobante</span>
-              </li>
-              <li>
-                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
-                <span class="modulos__topic-info">Emisión de nota de crédito y débito</span>
-              </li>
-              <li>
-                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
-                <span class="modulos__topic-info">Emisión de Guía de Remisión</span>
-              </li>
 
-              <li>
-                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
-                <span class="modulos__topic-info">Comprobantes de Contingencia</span>
-              </li>
-
-              <li>
-                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
-                <span class="modulos__topic-info">Dashboard</span>
-              </li>
-            </ul>
-
-          </div>
 
           <!--< finanzas -->
           <div class="modulos__topic">
             <div class="modulos__topic-icon-container">
               <img src="./img/modulos/up_high_sales_business_finance_icon-icons.com_76287.png" alt="icono-img-modulo"
                 class="modulos__topic-icon" />
-              <h3 class="modulos__topic-title">finanzas</h3>
+              <h3 class="modulos__topic-title">Finanzas</h3>
               <div class="modulos__topic-button">
                 <ion-icon name="chevron-down-outline" class="modulos__topic-button-icon"></ion-icon>
               </div>
