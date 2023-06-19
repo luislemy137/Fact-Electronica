@@ -45,7 +45,7 @@ h1 {
   padding-left: 00.5rem;
   font-family: 'Comfortaa', cursive;
   font-size: 2rem;
-  color: ;
+  color:var(--text-color) ;
 }
 
 h2 {
@@ -61,6 +61,10 @@ p {
 
   font-weight: 400;
   font-size: 1.2rem;
+}
+.logo-enlace{
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 .header {
@@ -251,6 +255,7 @@ p {
 }
 
 .modulos__container {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -390,14 +395,18 @@ p {
 
   .hero__article {
     flex-basis: 50%;
+    margin-bottom: 4rem;
   }
 
   .hero__imagen {
     flex-basis: 50%;
     margin: auto;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
+    padding-top: 8rem;
+    
+    
   }
 
   .grid-container {
