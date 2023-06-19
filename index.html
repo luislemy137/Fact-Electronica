@@ -7,17 +7,19 @@
   <title>BeeGo I Facturación electrónica</title>
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="css/index.css">
+  <!-- animacion css  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- link icon google font  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body class="body">
   <header class="header">
     <nav class="header-nav">
       <div class="header-nav-container">
-        <div href="#hero" class="header-nav__logo-container">
-          <img src="./img/rubik.png" alt="Logo de la Web" class="header-nav__logo" width="48" height="60" />
+        <div href="./index.html" class="header-nav__logo-container">
+
+          <img src="./img/rubik gif-2.gif" alt="Logo de la Web" class="header-nav__logo" />
           <h1 class="title">Qubo360</h1>
         </div>
         <figure class="header-nav__menu-icon-container" id="headerNavMenuIconContainer">
@@ -61,13 +63,16 @@
     <section class="hero">
       <div class="hero-container">
         <article class="hero__article animate__animated animate__fadeInLeft animate__delay-1s">
-          <h2 class="hero__subtitle">Servicio Facturación Electrónica</h2>
-          <span id="changing-text">Minimarket</span>
+          <h2 class="hero__subtitle">Facturación Electrónica Inmediata</h2>
+
+          <h3 id="changing-text"></h3>
+
           <p class="hero__texto">Nuestra solución de facturación electrónica simplifica tus tareas contables,
             cumple con los requisitos de SUNAT y te ayuda a tener éxito en tu negocio. Únete a nosotros.</p>
-          <p class="texto-celular">Eficiencia empresarial con facturación electrónica, gestión simplificada, informes
-            detallados, éxito emprendedor.</p>
+          <p class="texto-celular">Eficiencia empresarial, gestión simplificada, informes
+            detallados.</p>
           <!--<p>Optimizamos tu proceso de facturación con nuestra plataforma electrónica diseñada exclusivamente para emprendedores y pymes. Genera facturas de forma rápida, segura y cumple con todas las regulaciones fiscales vigentes. Olvídate del papeleo y envía las facturas directamente por correo electrónico a tus clientes. Nuestra interfaz intuitiva te permite mantener un control total sobre tus ventas, generar informes detallados y simplificar tus tareas administrativas. Potencia tu negocio y maximiza tu eficiencia con nuestra solución de facturación electrónica adaptada a emprendedores y pymes.</p>  -->
+
         </article>
         <div class="hero__imagen animate__animated animate__fadeInRight animate__delay-1s">
           <img src="./img/emprendedor.png" alt="emprendedor" width="400px">
@@ -83,120 +88,219 @@
           Te ayudamos a optimizar tus procesos contables, finanzas, logísticos, ventas y más. Simplifica tus tareas al
           almacenar datos,
         </p>
+        <!--< start modulos de gestión empresarial  -->
         <div class="modulos__topics grid-container">
+          <!--< ventas -->
           <div class="modulos__topic">
             <div class="modulos__topic-icon-container">
-              <img src="./img/modulos/computermonitoroutline_79935.png" alt="Ícono de etiqueta"
+              <img src="./img/modulos/shopping-cart.png" alt="icono-img-modulo"
                 class="modulos__topic-icon" />
-              <h3 class="modulos__topic-title">Punto de Venta</h3>
+              <h3 class="modulos__topic-title">Venta</h3>
               <div class="modulos__topic-button">
                 <ion-icon name="chevron-down-outline" class="modulos__topic-button-icon"></ion-icon>
               </div>
             </div>
-            <p class="modulos__topic-paragraph">
-              El sistema de punto de venta te permite registrar las ventas de manera rápida y eficiente. Puedes ingresar
-              los productos o servicios vendidos, especificar la cantidad, aplicar descuentos si es necesario y calcular
-              automáticamente el total a pagar.
-            </p>
-          </div>
+            <ul class="modulos__topic-paragraph">
 
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Usuario por Vendedor</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">administración de Clientes</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Apertura y cierre de caja</span>
+              </li>
+
+
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Dashboard</span>
+              </li>
+            </ul>
+
+          </div>
+          <!--< punto de venta -->
           <div class="modulos__topic">
             <div class="modulos__topic-icon-container">
-              <img src="./img/modulos/computermonitoroutline_79935.png" alt="Ícono de etiqueta"
+              <img src="./img/modulos/computermonitoroutline_79935.png" alt="icono-img-modulo"
                 class="modulos__topic-icon" />
-              <h3 class="modulos__topic-title">Punto de Venta</h3>
+              <h3 class="modulos__topic-title">Pto de Venta (POS)</h3>
               <div class="modulos__topic-button">
-                <ion-icon name="chevron-down-outline"></ion-icon>
+                <ion-icon name="chevron-down-outline" class="modulos__topic-button-icon"></ion-icon>
               </div>
             </div>
-            <p class="modulos__topic-paragraph">
-              El sistema de punto de venta te permite registrar las ventas de manera rápida y eficiente. Puedes ingresar
-              los productos o servicios vendidos, especificar la cantidad, aplicar descuentos si es necesario y calcular
-              automáticamente el total a pagar.
-            </p>
+            <ul class="modulos__topic-paragraph">
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Generación de comprobante</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Emisión de nota de crédito y débito</span>
+              </li>
+
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Comprobantes de Contingencia</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Emisión de Guía de Remisión</span>
+              </li>
+            </ul>
+
           </div>
 
+          <!--< tienda virtual -->
           <div class="modulos__topic">
             <div class="modulos__topic-icon-container">
-              <img src="./img/modulos/computermonitoroutline_79935.png" alt="Ícono de etiqueta"
+              <img src="./img/modulos/buying-on-smartphone.png" alt="icono-img-modulo" class="modulos__topic-icon" />
+              <h3 class="modulos__topic-title">Tienda Virtual</h3>
+              <div class="modulos__topic-button">
+                <ion-icon name="chevron-down-outline" class="modulos__topic-button-icon"></ion-icon>
+              </div>
+            </div>
+            <ul class="modulos__topic-paragraph">
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Generación de comprobante</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Emisión de nota de crédito y débito</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Emisión de Guía de Remisión</span>
+              </li>
+
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Comprobantes de Contingencia</span>
+              </li>
+
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Dashboard</span>
+              </li>
+            </ul>
+
+          </div>
+          <!--< logística -->
+          <div class="modulos__topic">
+            <div class="modulos__topic-icon-container">
+              <img src="./img/modulos/warehouse.png" alt="icono-img-modulo" class="modulos__topic-icon" />
+              <h3 class="modulos__topic-title">logística</h3>
+              <div class="modulos__topic-button">
+                <ion-icon name="chevron-down-outline" class="modulos__topic-button-icon"></ion-icon>
+              </div>
+            </div>
+            <ul class="modulos__topic-paragraph">
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Generación de comprobante</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Emisión de nota de crédito y débito</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Emisión de Guía de Remisión</span>
+              </li>
+
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Comprobantes de Contingencia</span>
+              </li>
+
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Dashboard</span>
+              </li>
+            </ul>
+
+          </div>
+
+          <!--< finanzas -->
+          <div class="modulos__topic">
+            <div class="modulos__topic-icon-container">
+              <img src="./img/modulos/up_high_sales_business_finance_icon-icons.com_76287.png" alt="icono-img-modulo"
                 class="modulos__topic-icon" />
-              <h3 class="modulos__topic-title">Punto de Venta</h3>
+              <h3 class="modulos__topic-title">finanzas</h3>
               <div class="modulos__topic-button">
-                <ion-icon name="chevron-down-outline"></ion-icon>
+                <ion-icon name="chevron-down-outline" class="modulos__topic-button-icon"></ion-icon>
               </div>
             </div>
-            <p class="modulos__topic-paragraph">
-              El sistema de punto de venta te permite registrar las ventas de manera rápida y eficiente. Puedes ingresar
-              los productos o servicios vendidos, especificar la cantidad, aplicar descuentos si es necesario y calcular
-              automáticamente el total a pagar.
-            </p>
+
+            <ul class="modulos__topic-paragraph">
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Generación de comprobante</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Emisión de nota de crédito y débito</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Emisión de Guía de Remisión</span>
+              </li>
+
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Comprobantes de Contingencia</span>
+              </li>
+
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Dashboard</span>
+              </li>
+            </ul>
           </div>
+
+          <!--< Contabilidad -->
 
           <div class="modulos__topic">
             <div class="modulos__topic-icon-container">
-              <img src="./img/modulos/computermonitoroutline_79935.png" alt="Ícono de etiqueta"
-                class="modulos__topic-icon" />
-              <h3 class="modulos__topic-title">Punto de Venta</h3>
+              <img src="./img/modulos/buying-on-smartphone.png" alt="icono-img-modulo" class="modulos__topic-icon" />
+              <h3 class="modulos__topic-title">Contabilidad</h3>
               <div class="modulos__topic-button">
-                <ion-icon name="chevron-down-outline"></ion-icon>
+                <ion-icon name="chevron-down-outline" class="modulos__topic-button-icon"></ion-icon>
               </div>
             </div>
-            <p class="modulos__topic-paragraph">
-              El sistema de punto de venta te permite registrar las ventas de manera rápida y eficiente. Puedes ingresar
-              los productos o servicios vendidos, especificar la cantidad, aplicar descuentos si es necesario y calcular
-              automáticamente el total a pagar.
-            </p>
-          </div>
+            <ul class="modulos__topic-paragraph">
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Generación de comprobante</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Emisión de nota de crédito y débito</span>
+              </li>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Emisión de Guía de Remisión</span>
+              </li>
 
-          <div class="modulos__topic">
-            <div class="modulos__topic-icon-container">
-              <img src="./img/modulos/computermonitoroutline_79935.png" alt="Ícono de etiqueta"
-                class="modulos__topic-icon" />
-              <h3 class="modulos__topic-title">Punto de Venta</h3>
-              <div class="modulos__topic-button">
-                <ion-icon name="chevron-down-outline"></ion-icon>
-              </div>
-            </div>
-            <p class="modulos__topic-paragraph">
-              El sistema de punto de venta te permite registrar las ventas de manera rápida y eficiente. Puedes ingresar
-              los productos o servicios vendidos, especificar la cantidad, aplicar descuentos si es necesario y calcular
-              automáticamente el total a pagar.
-            </p>
-          </div>
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Comprobantes de Contingencia</span>
+              </li>
 
+              <li>
+                <img src="./img/modulos/draw-check-mark.png" alt="icono" width="8">
+                <span class="modulos__topic-info">Dashboard</span>
+              </li>
+            </ul>
 
-
-          <div class="modulos__topic">
-            <div class="modulos__topic-icon-container">
-              <img src="./img/modulos/warehouse.png" alt="Ícono de componentes" class="modulos__topic-icon" />
-              <h3 class="modulos__topic-title">Logística</h3>
-              <div class="modulos__topic-button">
-                <ion-icon name="chevron-down-outline"></ion-icon>
-              </div>
-            </div>
-
-            <p class="modulos__topic-paragraph">
-              Permite gestionar eficientemente el flujo de productos, desde la gestión del almacén hasta las compras y
-              el control de inventario, optimizando así el proceso logístico de tu negocio.
-            </p>
-          </div>
-
-          <div class="modulos__topic">
-            <div class="modulos__topic-icon-container">
-              <img src="./img/modulos/up_high_sales_business_finance_icon-icons.com_76287.png" alt="Ícono de estilos"
-                class="modulos__topic-icon" />
-              <h3 class="modulos__topic-title">Finanzas</h3>
-              <div class="modulos__topic-button">
-                <ion-icon name="chevron-down-outline"></ion-icon>
-              </div>
-            </div>
-
-            <p class="modulos__topic-paragraph">
-              El módulo de finanzas te permite el registro de ingresos y gastos, generación de reportes, administración
-              de cuentas por cobrar y pagar, el cumplimiento fiscal y la facturación electrónica.
-            </p>
           </div>
         </div>
+        <!--< end modulos de gestión empresarial  -->
       </div>
     </section>
 

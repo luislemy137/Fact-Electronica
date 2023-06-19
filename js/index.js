@@ -25,21 +25,25 @@ window.addEventListener('DOMContentLoaded', () => {
   closeButton.addEventListener('click', closeMenu);
   // links.forEach(element => element.addEventListener('click', closeMenu));
 
-  const textElement = document.getElementById('changing-text');
-  const words = ["Minimarket", "Bodega", "Restaurante", "Panadería", "Grifos", "Tienda Virtual I Ecommerce", "Pymes I Emprendedores"];
+  // Array con los textos a mostrar
+  const texts =  ["Minimarket", "Bodega", "Restaurante", "Panadería", "Grifos", "Tienda Virtual I Ecommerce", "Pymes I Emprendedores"];
   let index = 0;
+  const heading = document.getElementById("changing-text");
 
-  function changeText() {
-    textElement.classList.add('fade-out'); // Agregar clase para iniciar la animación de fundido
-    setTimeout(() => {
-      textElement.textContent = words[index];
-      index = (index + 1) % words.length;
-      textElement.classList.remove('fade-out'); // Quitar clase para finalizar la animación de fundido
-    }, 500); // Esperar 0.5 segundos (igual a la duración de la transición en el CSS)
+  // Función para mostrar los textos uno a la vez
+  function showNextText() {
+    heading.textContent = texts[index];
+    index = (index + 1) % texts.length;
   }
 
-  // Cambiar la palabra cada 2 segundos
-  setInterval(changeText, 2000);
+  // Llamada inicial para mostrar el primer texto
+  showNextText();
+
+  // Intervalo de tiempo (en milisegundos) para cambiar de texto
+  const interval = 1000; // Cambiar cada segundo (1000 ms)
+
+  // Función para cambiar de texto automáticamente
+  setInterval(showNextText, interval);
 
   const expandButtons = document.querySelectorAll('.modulos__topic-button');
   expandButtons.forEach(button => {
@@ -52,4 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
       expandIcon.classList.toggle('modulos__topic-button-icon--rotate-180'); // Agrega esta línea para rotar el icono
     });
   });
+
+
+
 });
