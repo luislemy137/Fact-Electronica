@@ -45,18 +45,20 @@ window.addEventListener('DOMContentLoaded', () => {
   // Función para cambiar de texto automáticamente
   setInterval(showNextText, interval);
 
-  const expandButtons = document.querySelectorAll('.modulos__topic-button');
-  expandButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const topic = button.closest('.modulos__topic'); // Cambio en la selección del contenedor padre
-      const paragraph = topic.querySelector('.modulos__topic-paragraph');
-      const expandIcon = button.querySelector('.modulos__topic-button-icon'); // Selecciona el icono de expansión dentro del botón
-      topic.classList.toggle('expanded');
-      paragraph.classList.toggle('show');
-      expandIcon.classList.toggle('modulos__topic-button-icon--rotate-180'); // Agrega esta línea para rotar el icono
-    });
-  });
-
-
-
+ 
+  
 });
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
