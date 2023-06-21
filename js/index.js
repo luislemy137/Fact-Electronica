@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // links.forEach(element => element.addEventListener('click', closeMenu));
 
   // Array con los textos a mostrar
-  const texts =  ["Minimarket", "Bodega", "Restaurante", "Panadería", "Grifos", "Ecommerce", "Tienda Virtual", "Pymes I Emprendedores"];
+  const texts = ["Minimarket", "Bodega", "Restaurante", "Panadería", "Grifos", "Ecommerce", "Tienda Virtual", "Pymes I Emprendedores"];
   let index = 0;
   const heading = document.getElementById("changing-text");
 
@@ -45,16 +45,14 @@ window.addEventListener('DOMContentLoaded', () => {
   // Función para cambiar de texto automáticamente
   setInterval(showNextText, interval);
 
- 
-  
 });
 
 
-  
 
 
 
-  
+
+
 
 
 
