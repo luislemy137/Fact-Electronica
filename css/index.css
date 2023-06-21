@@ -7,11 +7,13 @@
   --text-color: #000000;
   --button-bg-color: #17bebb;
   --button-color: #f0f0f0;
-  --button-color-active: #ffcc33;
+  --button-color-active:  #ffcc33;
+  --button-color-veryactive: linear-gradient(45deg, #dbf4f3, #7be8e5);
   --padding-section: 4em 0;
   --padding-container: 0 2em;
   --max-width-container: 1024px;
   --border-radius: 1rem;
+  
 
 
 
@@ -233,7 +235,8 @@ p {
 }
 
 #changing-text {
-  background-color: var(--button-color-active);
+  background: linear-gradient(45deg, #dbf4f3, #ffcc33, #dbf4f3);
+  padding: 10px;
   display: inline;
   padding: 0.5rem 0.5rem;
   font-size: 1.5rem;
@@ -248,7 +251,8 @@ p {
 
 .modulos__topic-info {
   font-weight: 500;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
+ 
 }
 
 .modulos {
@@ -322,7 +326,7 @@ p {
   text-align: center;
   margin: 0.5rem;
   padding: 0.2rem 0.2rem;
-  background-color: var(--button-color-active);
+  background: var(--button-color-veryactive);
   border-radius: 0.4rem;
   font-size: 0.6rem;
 }
