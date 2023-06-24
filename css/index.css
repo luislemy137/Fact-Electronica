@@ -338,6 +338,24 @@ p {
 }
 
 
+.planes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.planes__container{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+
 
 
 /*****************************MEDIA QUERY***********************************/
