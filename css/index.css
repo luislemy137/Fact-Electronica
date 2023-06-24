@@ -348,8 +348,12 @@ p {
 
 
 .planes__container{
+
   margin: auto;
+  padding: var(--padding-container);
   display: flex;
+  flex-wrap: wrap;
+
   justify-content: center;
   align-items: center;
   gap: 3rem;
@@ -437,4 +441,5 @@ p {
   .texto-celular {
     display: none;
   }
+
 }
