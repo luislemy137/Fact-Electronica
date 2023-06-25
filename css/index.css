@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--text-color);
   padding-top: 2rem;
 }
@@ -259,6 +259,21 @@ p {
   margin: 0.8rem 0;
 }
 
+.demo{
+  background-color:#C1C1FF;
+  padding: 0.5rem 1rem;
+  color: black;
+  border: 0;
+  border-radius: 1rem;
+  margin: 0.4rem;
+}
+.demo a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000;
+}
+
 .modulos__topic-info {
   font-weight: 500;
   font-size: 0.6rem;
@@ -267,13 +282,13 @@ p {
 
 .modulos {
   padding: var(--padding-section);
-  min-height: 100vh;
   overflow: hidden;
-  padding-bottom: 10rem;
+
+  padding: 1rem auto;
 }
 
 .modulos__container {
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -350,6 +365,9 @@ p {
   align-items: center;
   gap: 2rem;
   overflow: hidden;
+  padding: 1rem 0;
+  background-color: red;
+
 
 }
 
@@ -360,6 +378,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 
@@ -420,6 +439,9 @@ p {
   .hero__imagen {
     flex-basis: 50%;
     margin: auto;
+  }
+  .modulos__container{
+    height: 100vh;
   }
 
   .modulos__topic {
