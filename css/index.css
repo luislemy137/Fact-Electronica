@@ -7,13 +7,13 @@
   --text-color: #000000;
   --button-bg-color: #17bebb;
   --button-color: #f0f0f0;
-  --button-color-active:  #ffcc33;
+  --button-color-active: #ffcc33;
   --button-color-veryactive: linear-gradient(45deg, #dbf4f3, #7be8e5);
   --padding-section: 4em 0;
   --padding-container: 0 2em;
   --max-width-container: 1024px;
   --border-radius: 1rem;
-  
+
 
 
 
@@ -44,10 +44,9 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-  padding-left: 0.5rem;
-  font-family: 'Comfortaa', cursive;
   font-size: 2rem;
   color: var(--text-color);
+  padding-top: 2rem;
 }
 
 h2 {
@@ -67,7 +66,7 @@ p {
 
 .logo-enlace {
   text-decoration: none;
-  color: var(--text-color);
+
 }
 
 .header {
@@ -87,11 +86,11 @@ p {
 
 .header-nav--scroll {
   padding: 0.2rem 0;
-  /*este padding funciona cuando se scrollea en Y*/
-  background-image: url('../img/wave.svg');
+  /*este padding funciona cuando se scrollea en Y
+  background-image: url('../img/wave.svg');*/
   background-size: cover;
   background-repeat: no-repeat;
-  height: 210px;
+  height: 10rem;
   opacity: 0;
   animation: fadeIn 1s forwards;
   width: 100%;
@@ -217,12 +216,17 @@ p {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 0 2rem;
+  padding: 4rem 2rem;
 
 }
 
+
 .hero__article {
-  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
 }
 
 .hero__subtitle {
@@ -230,7 +234,10 @@ p {
 }
 
 .hero__imagen {
-  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
 }
 
@@ -243,6 +250,9 @@ p {
   border-radius: var(--border-radius);
 }
 
+
+
+
 .texto-desktop,
 .texto-celular {
   text-align: left;
@@ -252,24 +262,30 @@ p {
 .modulos__topic-info {
   font-weight: 500;
   font-size: 0.6rem;
- 
+
 }
 
 .modulos {
   padding: var(--padding-section);
+  min-height: 100vh;
+  overflow: hidden;
+  padding-bottom: 10rem;
 }
 
 .modulos__container {
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   max-width: var(--max-width-container);
-
   padding: var(--padding-container);
   margin: 1rem auto;
+}
+
+.modulos__topic-title {
+  text-align: center;
 }
 
 .modulos__paragraph {
@@ -278,8 +294,11 @@ p {
 }
 
 .grid-container {
-  display: grid;
-  grid-gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .modulos__topic {
@@ -294,20 +313,6 @@ p {
   width: 150px;
   height: 250px;
 }
-
-.grid-container {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-}
-
-@media (min-width: 768px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-}
-
-
 
 .modulos__topic-icon-container {
 
@@ -338,25 +343,38 @@ p {
 }
 
 
-.planes{
+.planes {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  overflow: hidden;
+
+}
+
+.planes__container {
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
-.planes__container{
-
-  margin: auto;
+.card__container {
+  margin: 3rem auto;
   padding: var(--padding-container);
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
   align-items: center;
   gap: 3rem;
+}
+
+.card {
+  width: 200px;
 }
 
 
@@ -392,40 +410,21 @@ p {
 
 /* Estilos para modo desktop */
 @media (min-width: 768px) {
-  .hero-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 0 2rem;
-    margin: auto 2rem;
-  }
+
 
   .hero__article {
     flex-basis: 50%;
-    margin-bottom: 4rem;
+
   }
 
   .hero__imagen {
     flex-basis: 50%;
     margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 8rem;
-
-
-  }
-
-
-  .grid-container {
-    display: grid;
-    grid-gap: 6rem;
   }
 
   .modulos__topic {
     width: 270px;
-    height: 260px;
+    height: 240px;
   }
 
   .modulos__topic-subtitle {
@@ -440,6 +439,10 @@ p {
 
   .texto-celular {
     display: none;
+  }
+
+  .card {
+    width: 300px;
   }
 
 }
