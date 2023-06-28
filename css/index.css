@@ -44,14 +44,14 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: var(--text-color);
   padding-top: 2rem;
 }
 
 h2 {
   font-weight: 800;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 h3 {
@@ -61,7 +61,7 @@ h3 {
 p {
 
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .logo-enlace {
@@ -86,8 +86,8 @@ p {
 
 .header-nav--scroll {
   padding: 0.2rem 0;
-  /*este padding funciona cuando se scrollea en Y
-  background-image: url('../img/wave.svg');*/
+  /*este padding funciona cuando se scrollea en Y*/
+  background-image: url('../img/wave.svg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 10rem;
@@ -210,6 +210,8 @@ p {
   overflow: hidden;
 }
 
+
+
 .hero-container {
   display: flex;
   flex-wrap: wrap;
@@ -221,10 +223,13 @@ p {
 }
 
 
+
 .hero__article {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 2rem;
+
 
 
 }
@@ -233,11 +238,13 @@ p {
   margin: 0.5rem 0;
 }
 
-.hero__imagen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.carousel img {
+  display: none;
+ 
+}
+
+.carousel img:first-child {
+  display: block;
 }
 
 
@@ -246,7 +253,7 @@ p {
   padding: 10px;
   display: inline;
   padding: 0.5rem 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   border-radius: var(--border-radius);
 }
 
@@ -391,6 +398,7 @@ p {
 
 .card {
   width: 200px;
+  border-radius: 1rem;
 }
 
 
@@ -426,6 +434,27 @@ p {
 
 /* Estilos para modo desktop */
 @media (min-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    padding-top: 2rem;
+  }
+  
+  h2 {
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 0.8rem;
+  }
+  
+  p {
+  
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  
 
 
   .hero__article {
@@ -433,9 +462,17 @@ p {
 
   }
 
-  .hero__imagen {
+  .carousel {
     flex-basis: 50%;
     margin: auto;
+  }
+  #changing-text {
+    background: linear-gradient(45deg, #dbf4f3, #ffcc33, #dbf4f3);
+    padding: 10px;
+    display: inline;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.3rem;
+    border-radius: var(--border-radius);
   }
   .modulos__container{
     height: 100vh;
@@ -462,6 +499,7 @@ p {
 
   .card {
     width: 300px;
+   
   }
 
 }

@@ -45,6 +45,20 @@ window.addEventListener('DOMContentLoaded', () => {
   // Función para cambiar de texto automáticamente
   setInterval(showNextText, interval);
 
+
+  const carouselImages = document.querySelectorAll("#carousel img");
+  
+  let currentImageIndex = 0;
+  
+  function showNextImage() {
+    carouselImages[currentImageIndex].style.display = "none";
+    currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+    carouselImages[currentImageIndex].style.display = "block";
+  }
+  
+  carouselImages[currentImageIndex].style.display = "block";
+  
+  setInterval(showNextImage, 3000);
   
   
 
