@@ -58,16 +58,20 @@ h2 {
 
 h3 {
   font-size: 0.8rem;
+
 }
-a{
+
+a {
   font-family: 'Montserrat', sans-serif;
 }
+
 p {
 
   font-weight: 400;
   font-size: 1rem;
 }
-h5{
+
+h5 {
   font-size: 0.9rem;
 }
 
@@ -248,9 +252,11 @@ h5{
 .carousel img {
   display: none;
 }
-.text-carrousel{
+
+.text-carrousel {
   text-align: center;
 }
+
 .carousel img:first-child {
   display: block;
 }
@@ -273,7 +279,48 @@ h5{
   text-align: left;
   margin: 0.8rem 0;
 }
+.ecommerce__container{
+  height: auto;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.item__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 3rem;
+}
+.item img{
+  border-radius: 1rem;
+}
+.item_precio{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
 
+.item h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 01rem;
+}
+.item button{
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--button-color-active);
+}
 
 .modulos__topic-info {
   font-weight: 500;
@@ -284,6 +331,7 @@ h5{
 .modulos {
   padding: var(--padding-section);
   overflow: hidden;
+  background-image: linear-gradient(var(--primary-theme-color), var(--secondary-theme-color));
 
   padding: 1rem auto;
 }
@@ -356,6 +404,20 @@ h5{
   list-style: none;
   text-align: center;
   margin: 0;
+}
+.demo{
+  text-decoration: none;
+  margin-top: 4rem;
+  font-size: 1rem;
+}
+
+.demo button{
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: var(--button-color-active);
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
 }
 
 
@@ -433,22 +495,22 @@ h5{
     color: var(--text-color);
     padding-top: 2rem;
   }
-  
+
   h2 {
     font-weight: 800;
     font-size: 1.8rem;
   }
-  
+
   h3 {
     font-size: 0.8rem;
   }
-  
+
   p {
-  
+
     font-weight: 400;
     font-size: 1.2rem;
   }
-  
+
 
 
   .hero__article {
@@ -460,6 +522,7 @@ h5{
     flex-basis: 50%;
     margin: auto;
   }
+
   #changing-text {
     background: linear-gradient(45deg, #dbf4f3, #ffcc33, #dbf4f3);
     padding: 10px;
@@ -468,7 +531,16 @@ h5{
     font-size: 1.3rem;
     border-radius: var(--border-radius);
   }
-  .modulos__container{
+
+  .item{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 2rem;
+  }
+
+  .modulos__container {
     height: 100vh;
   }
 
@@ -493,7 +565,6 @@ h5{
 
   .card {
     width: 300px;
-   
   }
 
 }
