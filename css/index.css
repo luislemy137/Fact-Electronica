@@ -101,7 +101,7 @@ h5 {
   background-image: url('../img/wave.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 10rem;
+  height: 200px;
   opacity: 0;
   animation: fadeIn 1s forwards;
   width: 100%;
@@ -313,12 +313,14 @@ h5 {
 
 .item h3{
   font-family: 'Montserrat', sans-serif;
-  font-size: 01rem;
+  font-size: 0.8rem;
+
 }
 .item button{
-  font-size: 1rem;
-  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
   border-radius: 1rem;
+  font-weight: 600;
   background-color: var(--button-color-active);
 }
 
@@ -408,14 +410,13 @@ h5 {
 .demo{
   text-decoration: none;
   margin-top: 4rem;
-  font-size: 1rem;
 }
 
 .demo button{
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 0.5rem;
   border-radius: 1rem;
   background-color: var(--button-color-active);
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
 }
@@ -454,7 +455,6 @@ h5 {
 
 .card {
   width: 200px;
-  border-radius: 1rem;
 }
 
 
@@ -535,9 +535,9 @@ h5 {
   .item{
     display: flex;
     flex-direction: column;
-    height: 250px;
-    width: 250px;
-    margin-bottom: 2rem;
+    height: 280px;
+    width: 280px;
+
   }
 
   .modulos__container {
@@ -562,9 +562,14 @@ h5 {
   .texto-celular {
     display: none;
   }
+  .planes__container{
+    padding-top: 4rem;
+    height: 100vh;
+  }
 
   .card {
-    width: 300px;
+    width: 220px;
+
   }
 
 }
