@@ -280,25 +280,28 @@ h5 {
   margin: 0.8rem 0;
 }
 .ecommerce__container{
+  padding-top: 1rem;
   height: auto;
-  margin: 2rem;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .item__container{
+  padding-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 1rem;
+  
+
 }
 .item{
   display: flex;
   flex-direction: column;
-  height: 150px;
+  height: 220px;
   width: 150px;
   margin-bottom: 3rem;
 }
@@ -365,21 +368,27 @@ h5 {
   margin-top: 0.5rem;
 }
 .description h3{
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: 'Montserrat', sans-serif;
 }
 .description h4{
-  font-size: 0.9rem;
+  font-size: 0.6rem;
 }
 .pricing{
   padding: 0.5rem 1rem;
   display: flex;
-  justify-content:space-between;
+  flex-direction: column;
+  justify-content:center;
   align-items: center;
   margin-top: 0.2rem;
   background-color: #21213b;
   border-radius: 5px;
   color: #f0f0f0;
+  
+  
+}
+.pricing h3{
+  font-size: 0.8rem;
 }
 .pricing .buy{
   padding: 0.2rem 0.5rem;
@@ -387,6 +396,7 @@ h5 {
   background-color: #68ddbd;
   color: #000000;
   font-weight: bold;
+  font-size: 0.6rem;
 }
 
 
@@ -627,10 +637,15 @@ h5 {
     font-size: 0.9rem;
   }
   .pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 0.5rem 1rem;
     margin-top: 0.2rem;
     border-radius: 5px;
   }
+
   .pricing .buy{
     padding: 0.2rem 0.5rem;
     border-radius: 10px;
