@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // links.forEach(element => element.addEventListener('click', closeMenu));
 
   // Array con los textos a mostrar
-  const texts = ["Minimarket", "Tienda de Conveniencia", "Bodega", "Ferreterías", "Panadería", "Ecommerce", "Tienda Virtual en Wordpress","Venta Redes Sociales", "Pymes I Emprendedores"];
+  const texts = ["Minimarket", "Tienda de Conveniencia", "Bodega", "Ferreterías", "Panadería", "Ecommerce", "Tienda Virtual en Wordpress", "Venta Redes Sociales", "Pymes I Emprendedores"];
   let index = 0;
   const heading = document.getElementById("changing-text");
 
@@ -47,20 +47,49 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
   const carouselImages = document.querySelectorAll("#carousel img");
-  
+
   let currentImageIndex = 0;
-  
+
   function showNextImage() {
     carouselImages[currentImageIndex].style.display = "none";
     currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
     carouselImages[currentImageIndex].style.display = "block";
   }
-  
+
   carouselImages[currentImageIndex].style.display = "block";
-  
+
   setInterval(showNextImage, 3000);
-  
-  
+
+
+  const videoContainers = document.querySelectorAll('.video-container');
+
+  videoContainers.forEach((container) => {
+    const video = container.querySelector('.video');
+    const previewImage = container.querySelector('.preview-image');
+    const playButton = container.querySelector('.play-button');
+
+    playButton.addEventListener('click', function () {
+      video.style.display = 'block';
+      video.play();
+      previewImage.style.display = 'none';
+      playButton.style.display = 'none';
+    });
+
+    video.addEventListener('ended', function () {
+      video.style.display = 'none';
+      previewImage.style.display = 'block';
+      playButton.style.display = 'block';
+    });
+  });
+
+
+
+
+
+
+
+
+
 
 });
 

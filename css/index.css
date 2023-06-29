@@ -298,31 +298,103 @@ h5 {
 .item{
   display: flex;
   flex-direction: column;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   margin-bottom: 3rem;
 }
-.item img{
-  border-radius: 1rem;
+
+.video-container {
+  position: relative;
+  display: inline-block;
 }
-.item_precio{
+
+.preview-image {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 15%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  border: #000000 0px solid;
+  border-radius: 50%;
+}
+
+.play-button img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: pulse 1s infinite;
+  opacity: 0.8;
+  background-color: rgb(241, 238, 238);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0);
+  }
+}
+
+.play-button .pause-icon {
+  display: none;
+}
+
+.video {
+  display: none;
+}
+
+.description{
+  margin-top: 0.5rem;
+}
+.description h3{
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.description h4{
+  font-size: 0.9rem;
+}
+.pricing{
+  padding: 0.5rem 1rem;
   display: flex;
   justify-content:space-between;
   align-items: center;
+  margin-top: 0.2rem;
+  background-color: #21213b;
+  border-radius: 5px;
+  color: #f0f0f0;
+}
+.pricing .buy{
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  background-color: #68ddbd;
+  color: #000000;
+  font-weight: bold;
 }
 
-.item h3{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.8rem;
 
-}
-.item button{
-  font-size: 0.7rem;
-  padding: 0.2rem 0.4rem;
-  border-radius: 1rem;
-  font-weight: 600;
-  background-color: var(--button-color-active);
-}
+
+
+
+
+
 
 .modulos__topic-info {
   font-weight: 500;
@@ -535,10 +607,36 @@ h5 {
   .item{
     display: flex;
     flex-direction: column;
-    height: 280px;
-    width: 280px;
+    height: 400px;
+    width: 300px;
 
   }
+  .play-button img {
+    width: 80px;
+    height: 80px;
+
+  }
+  .description{
+    margin-top: 0.5rem;
+  }
+  .description h3{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .description h4{
+    font-size: 0.9rem;
+  }
+  .pricing{
+    padding: 0.5rem 1rem;
+    margin-top: 0.2rem;
+    border-radius: 5px;
+  }
+  .pricing .buy{
+    padding: 0.2rem 0.5rem;
+    border-radius: 10px;
+
+  }
+
 
   .modulos__container {
     height: 100vh;
@@ -573,3 +671,5 @@ h5 {
   }
 
 }
+
+
