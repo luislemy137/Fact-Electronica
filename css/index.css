@@ -301,7 +301,7 @@ h5 {
 .item{
   display: flex;
   flex-direction: column;
-  height: 220px;
+  height: 240px;
   width: 150px;
   margin-bottom: 3rem;
 }
@@ -322,11 +322,11 @@ h5 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 15%;
   transform: translateX(-50%);
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -336,12 +336,12 @@ h5 {
 }
 
 .play-button img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   animation: pulse 1s infinite;
-  opacity: 0.8;
-  background-color: rgb(241, 238, 238);
+  opacity: 0.9;
+
 }
 
 @keyframes pulse {
@@ -375,7 +375,7 @@ h5 {
   font-size: 0.6rem;
 }
 .pricing{
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content:center;
@@ -622,8 +622,8 @@ h5 {
 
   }
   .play-button img {
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
 
   }
   .description{
