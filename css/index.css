@@ -120,8 +120,8 @@ h5 {
 .header-nav__logo-container {
   display: flex;
   align-items: center;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   text-decoration: none;
 }
 
@@ -280,6 +280,7 @@ h5 {
 }
 
 .modulos__container {
+  margin: auto;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -288,7 +289,8 @@ h5 {
   gap: 1rem;
   max-width: var(--max-width-container);
   padding-top: 3rem;
-  margin: 1rem auto;
+  padding: 0 2rem;
+  
 }
 
 .modulos__topic-title {
