@@ -10,14 +10,9 @@
   --button-color-active: #ffcc33;
   --button-color-veryactive: linear-gradient(45deg, #dbf4f3, #7be8e5);
   --padding-section: 4em 0;
-  --padding-container: 0 2em;
+  --padding-container: 1rem 2rem;
   --max-width-container: 1024px;
   --border-radius: 1rem;
-
-
-
-
-
 }
 
 * {
@@ -44,10 +39,9 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--text-color);
   padding-top: 2rem;
-  font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
@@ -90,7 +84,9 @@ h5 {
 }
 
 .header-nav {
-  padding: 0.2rem 0;
+  margin: 0 auto;
+  /* Agregar margin auto */
+  padding: 1rem 0;
 
 
 }
@@ -98,7 +94,7 @@ h5 {
 .header-nav--scroll {
   padding: 0.2rem 0;
   /* Este padding funciona cuando se hace scroll en Y */
-  background-image: url('../img/wave-haikei\ \(1\).svg');
+  background-image: url('../img/header-logo/wave-haikei-movil.svg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 300px;
@@ -108,27 +104,40 @@ h5 {
 }
 
 .header-nav-container {
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: var(--max-width-container);
-  margin: auto;
-  padding: var(--padding-container);
+  padding: 0 1rem;
 }
 
 /* start tamaño de logo */
 .header-nav__logo-container {
   display: flex;
   align-items: center;
-  width: 100px;
-  height: 100px;
-  text-decoration: none;
+  justify-content: flex-start;
+  /* Cambiado a flex-start */
+  width: 100%;
+  max-width: var(--max-width-container);
+  /* Agregado max-width */
 }
 
-.header-nav__logo {
-  width: 100%;
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
   height: 100%;
 }
+.header-nav__logo {
+  width: 60px;
+  margin-right: 1rem;
+  /* Agregado margen derecho para separar el logo del título */
+}
+
 
 /* end tamaño de logo */
 
@@ -290,7 +299,7 @@ h5 {
   max-width: var(--max-width-container);
   padding-top: 3rem;
   padding: 0 2rem;
-  
+
 }
 
 .modulos__topic-title {
@@ -358,22 +367,26 @@ h5 {
   margin: 0;
 }
 
-.demo {
-  text-decoration: none;
-  margin-top: 4rem;
-}
 
-.demo button {
+
+.demo {
   padding: 0.3rem 0.5rem;
   border-radius: 1rem;
-  background-color: var(--button-color-active);
-  font-size: 0.7rem;
+  background-color:#ffcc33;
+  font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
+  margin-top: 4rem;
+}
+.demo-modulos {
+  text-decoration: none;
+  color: inherit;
+  
 }
 
 
 .planes {
+  background-image: linear-gradient(var(--primary-theme-color), var(--secondary-theme-color));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -409,13 +422,23 @@ h5 {
   width: 200px;
 }
 
-
+.ecommerce{
+  background-image: linear-gradient(var(--primary-theme-color), var(--secondary-theme-color));
+}
 .ecommerce__container {
   height: auto;
   padding-top: 6rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ecommerce__instruccion {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 1rem;
@@ -448,7 +471,7 @@ h5 {
   width: 100%;
   display: block;
   border-radius: 1rem;
-  width: 150px ;
+  width: 150px;
   height: 150px;
 }
 
@@ -524,7 +547,7 @@ h5 {
   margin-top: 0.2rem;
   background-color: #000000d2;
   color: #f0f0f0;
-  border-radius: 0 0 1rem 1rem; 
+  border-radius: 0 0 1rem 1rem;
 
 
 }
@@ -541,6 +564,46 @@ h5 {
   color: #000000;
   font-weight: bold;
   font-size: 0.6rem;
+}
+.buy a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+footer {
+  background-color: #000000d2;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para las redes sociales */
+.redes-sociales {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.icono-redes{
+  border-radius: 50%;
+  border: #000 1px solid;
+}
+
+.redes-sociales li {
+  margin-right: 10px;
+}
+
+.redes-sociales img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilos para el texto de información adicional */
+.informacion-adicional {
+  color: #cfcbcb;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 
@@ -579,7 +642,6 @@ h5 {
   h1 {
     font-size: 1.8rem;
     color: var(--text-color);
-    padding-top: 2rem;
   }
 
   h2 {
@@ -595,6 +657,17 @@ h5 {
 
     font-weight: 400;
     font-size: 1.2rem;
+  }
+  .header-nav--scroll {
+    padding: 0.2rem 0;
+    /* Este padding funciona cuando se hace scroll en Y */
+    background-image: url('../img/header-logo/wave-haikei.svg ');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    opacity: 0.9;
+    /* Cambiado a 0.5 */
+    width: 100%;
   }
 
   .hero__article {
@@ -653,13 +726,14 @@ h5 {
   .ecommerce__container {
     margin: auto;
   }
+
   .item__container {
     margin: auto;
     padding-top: 1.5rem;
     gap: 3rem;
   }
-  
-  
+
+
   .item {
     display: flex;
     flex-direction: column;
@@ -667,8 +741,9 @@ h5 {
     width: 300px;
 
   }
+
   .preview-image {
-    width: 300px ;
+    width: 300px;
     height: 300px;
   }
 
@@ -704,6 +779,7 @@ h5 {
   .pricing .buy {
     padding: 0.2rem 0.5rem;
     border-radius: 10px;
+   
 
   }
 

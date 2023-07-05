@@ -1,0 +1,5 @@
+for (let i=0; i<10; i++){
+  console.log(i)
+}
+
+"i++": Esta es la expresión que se ejecuta después de cada iteración del bucle. "i++" incrementa el valor de "i" en 1.
