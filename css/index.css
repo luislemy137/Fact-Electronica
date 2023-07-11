@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@400;500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@400;500;600;700;800&family=Orbitron:wght@900&display=swap');
 :root {
   scroll-behavior: smooth;
   --primary-theme-color: #f0f0f0;
@@ -39,9 +38,10 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--text-color);
-  padding-top: 2rem;
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 1.3rem;
 }
 
 h2 {
@@ -129,9 +129,9 @@ h5 {
   justify-content: center;
   margin: 0;
   padding-bottom: 2rem;
-  font-size: 1.5rem;
   height: 100%;
 }
+
 .header-nav__logo {
   width: 60px;
   margin-right: 1rem;
@@ -181,6 +181,8 @@ h5 {
 }
 
 .header-nav__menu-link {
+  font-family: 'Montserrat', sans-serif;
+
   color: var(--text-color);
   font-weight: 600;
   padding: 0.25em 1em;
@@ -277,6 +279,7 @@ h5 {
 .texto-celular {
   text-align: left;
   margin: 0.8rem 0;
+  text-align: justify;
 }
 
 
@@ -309,7 +312,7 @@ h5 {
 .modulos__paragraph {
   text-align: center;
   margin: 0;
-  font-size: 1rem;
+
 }
 
 .modulos__topic-info {
@@ -372,16 +375,17 @@ h5 {
 .demo {
   padding: 0.3rem 0.5rem;
   border-radius: 1rem;
-  background-color:#ffcc33;
+  background-color: #ffcc33;
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   margin-top: 4rem;
 }
+
 .demo-modulos {
   text-decoration: none;
   color: inherit;
-  
+
 }
 
 
@@ -422,9 +426,10 @@ h5 {
   width: 200px;
 }
 
-.ecommerce{
+.ecommerce {
   background-image: linear-gradient(var(--primary-theme-color), var(--secondary-theme-color));
 }
+
 .ecommerce__container {
   height: auto;
   padding-top: 6rem;
@@ -460,6 +465,11 @@ h5 {
   height: 250px;
   width: 150px;
   margin-bottom: 3rem;
+  transition: transform 0.3s ease;
+}
+.item:hover {
+  transform: scale(1.03
+  );
 }
 
 .video-container {
@@ -467,13 +477,18 @@ h5 {
   display: inline-block;
 }
 
+
+
 .preview-image {
   width: 100%;
   display: block;
   border-radius: 1rem;
   width: 150px;
   height: 150px;
+
 }
+
+
 
 .play-button {
   display: flex;
@@ -565,7 +580,8 @@ h5 {
   font-weight: bold;
   font-size: 0.6rem;
 }
-.buy a{
+
+.buy a {
   text-decoration: none;
   color: inherit;
 }
@@ -585,7 +601,8 @@ footer {
   justify-content: center;
   margin-bottom: 10px;
 }
-.icono-redes{
+
+.icono-redes {
   border-radius: 50%;
   border: #000 1px solid;
 }
@@ -640,13 +657,13 @@ footer {
 /* Estilos para modo desktop */
 @media (min-width: 768px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     color: var(--text-color);
   }
 
   h2 {
     font-weight: 800;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   h3 {
@@ -654,10 +671,12 @@ footer {
   }
 
   p {
+    font-size: 1rem;
 
     font-weight: 400;
-    font-size: 1.2rem;
+  
   }
+
   .header-nav--scroll {
     padding: 0.2rem 0;
     /* Este padding funciona cuando se hace scroll en Y */
@@ -685,7 +704,7 @@ footer {
     padding: 10px;
     display: inline;
     padding: 0.5rem 0.5rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     border-radius: var(--border-radius);
   }
 
@@ -730,21 +749,21 @@ footer {
   .item__container {
     margin: auto;
     padding-top: 1.5rem;
-    gap: 3rem;
+    gap: 2rem;
   }
 
 
   .item {
     display: flex;
     flex-direction: column;
-    height: 400px;
-    width: 300px;
+    height: 360px;
+    width: 270px;
 
   }
 
   .preview-image {
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
   }
 
   .play-button img {
@@ -779,7 +798,7 @@ footer {
   .pricing .buy {
     padding: 0.2rem 0.5rem;
     border-radius: 10px;
-   
+
 
   }
 

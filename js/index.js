@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // links.forEach(element => element.addEventListener('click', closeMenu));
 
   // Array con los textos a mostrar
-  const texts = ["Minimarket", "Tienda de Conveniencia", "Bodega", "Ferreterías", "Farmacia", "Ecommerce", "Tienda Virtual en Wordpress", "Venta Redes Sociales", "Pymes I Emprendedores"];
+  const texts = ["...","Mypes I Pymes","Emprendedores", "Minimarket", "Bodega", "Ferretería", "Mayoristas", "Farmacia", "Tienda de Ropa", "Licorería", "Taller Mecánico", "Tienda de Repuestos", "Lubricentros", "Proveedores de servicio", "Venta Redes Sociales", "y muchos negocios más"];
   let index = 0;
   const heading = document.getElementById("changing-text");
 
@@ -60,6 +60,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   setInterval(showNextImage, 3000);
 
+  
 
   const videoContainers = document.querySelectorAll('.video-container');
 
@@ -67,29 +68,24 @@ window.addEventListener('DOMContentLoaded', () => {
     const video = container.querySelector('.video');
     const previewImage = container.querySelector('.preview-image');
     const playButton = container.querySelector('.play-button');
-
+  
+    // Añade la propiedad muted al elemento de video
+    video.muted = true;
+  
     playButton.addEventListener('click', function () {
       video.style.display = 'block';
       video.play();
       previewImage.style.display = 'none';
       playButton.style.display = 'none';
     });
-
+  
     video.addEventListener('ended', function () {
       video.style.display = 'none';
       previewImage.style.display = 'block';
       playButton.style.display = 'block';
     });
   });
-
-
-
-
-
-
-
-
-
+  
 
 });
 
